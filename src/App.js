@@ -1,9 +1,13 @@
-import PureComponentsExample from "./Components/PureComponents/";
+import EnhancedLikes from "./Components/HOC/LikesComp";
+import EnhancedComments from "./Components/HOC/CommentsComp";
 
 function App() {
   return (
     <div className="App">
-      <PureComponentsExample />
+      {/* <LikesComp /> */}
+      {/* <CommentsComp /> */}
+      <EnhancedLikes />
+      <EnhancedComments />
     </div>
   );
 }
