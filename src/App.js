@@ -1,9 +1,9 @@
-import PureComponentsExample from "./Components/PureComponents/";
+import TableTree from "./Components/TableTree";
 
 function App() {
   return (
     <div className="App">
-      <PureComponentsExample />
+      <TableTree />
     </div>
   );
 }

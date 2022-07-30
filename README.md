@@ -3,3 +3,7 @@
 It does not re-render if the component props or state is same.
 pros: less re-render => Efficient, faster loading
 cons: Only shallow comparison of objects.
+
+2. React Table Expandable
+---------------------------
+npm i react-table, styled-components, namor
