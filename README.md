@@ -39,3 +39,19 @@
     --> this.myRef = React.createRef()
     --> const RefChildDemo = forwardRef((props, ref) => { return( <div>Test </div> )})
 
+4. Error Boundaries
+----------------------
+  a. static getDerivedStateFromError(error) {
+    // Update the state, so the next render will show fallback UI
+  }
+  b. componentDidCatch(error, errorInfo) {
+    // Can log error to an error reporting service.
+    logErrorToBackend(error, errorInfo)
+  }
+
+  Do not catch errors for
+  ----------------------------
+  1. Event handlers
+  2. Async code, Eg: setTimeout, callbacks
+  3. server side rendering
+  4. Errors thrown in the error boundary itself
