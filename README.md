@@ -21,13 +21,21 @@
     }
   }
 
-  Use cases
-  -----------
-  1. Loading screen unitl component fetches data
-  2. styling components
-  3. providing specific data or props to componenta 
+    Use cases of HOC
+    -----------
+    1. Loading screen unitl component fetches data
+    2. styling components
+    3. providing specific data or props to component
 
-  -> Avoid using Render Method
-  -> Static Methods must be copied over
-  -> Ref's aren't passed through
-  
+    -> Avoid using Render Method
+    -> Static Methods must be copied over
+    -> Ref's aren't passed through
+    
+
+  3. Refs
+  ------------
+    --> Ref provide a way to access DOM nodes or React Elements created in the render method
+    --> Can not use in functional component as they do not have instances
+    --> this.myRef = React.createRef()
+    --> const RefChildDemo = forwardRef((props, ref) => { return( <div>Test </div> )})
+
